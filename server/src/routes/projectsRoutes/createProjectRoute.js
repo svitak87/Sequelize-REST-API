@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const router = Router();
-const createProject = require("../controlllers/createProject");
+const createProject = require("../../controlllers/projectControllers/createProject");
 
 router.post("/projects", async (req, res) => {
   try {

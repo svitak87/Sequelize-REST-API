@@ -1,4 +1,4 @@
-const { Project } = require("../database/database");
+const { Project } = require("../../database/database");
 
 const createProject = async (dataProject) => {
   const { name, priority, description } = dataProject;
