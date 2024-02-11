@@ -1,8 +1,9 @@
+const { query } = require("express");
 const { Project } = require("../../database/database");
 
-const getAllProjects = async () => {
+const getAllProjects = async (query) => {
   try {
-    const projects = await Project.findAll();
+    const projects = await Project.findAll({ where: query });
 
     if (projects.length === 0) {
       throw new Error("There are no projects");
