@@ -1,5 +1,7 @@
 const { Project } = require("../../database/database");
 
+//tester
+
 const getAllProjects = async (query) => {
   try {
     const projects = await Project.findAll({where: query});
