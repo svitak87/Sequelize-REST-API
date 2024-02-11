@@ -3,6 +3,7 @@ Overview:
 This application is a REST API built using Sequelize, a promise-based Node.js ORM for Postgres, to interact with a Postgres database. Below is a breakdown of each dependency:
 
 Dependencies:
+
 dotenv:
 Dotenv is used for loading environment variables from a .env file into process.env. This is useful for securely storing and accessing sensitive information such as database credentials.
 
